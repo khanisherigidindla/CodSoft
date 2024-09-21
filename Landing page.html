@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodSoft - Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .services-list, .courses-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item, .course-item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3, .course-item h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .signup-form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        #contact {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #444;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to CodSoft</h1>
+            <p>Your Gateway to Innovative Software Solutions</p>
+            <a href="#signup" class="btn-primary">Sign Up Now</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Custom Software Development</h3>
+                    <p>We create custom software solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Build dynamic, responsive websites with our expert team.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mobile App Development</h3>
+                    <p>Develop high-performance mobile apps for iOS and Android platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Available Courses</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Master front-end and back-end technologies with our comprehensive program.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Data Science & AI</h3>
+                    <p>Learn data analysis, machine learning, and artificial intelligence.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Mobile App Development</h3>
+                    <p>Develop and deploy mobile apps for both iOS and Android platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="section">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST" class="signup-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="password" name="password" placeholder="Create a Password" required>
+                <button type="submit" class="btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CodSoft. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
